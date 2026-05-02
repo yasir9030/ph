@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset Sample Data</title>
+</head>
+<body>
+    <h1>Click the button below to reset sample data</h1>
+    <button onclick="resetSampleData()">Reset Sample Data</button>
+
+    <script>
+        function resetSampleData() {
+            localStorage.removeItem('rp_donors');
+            localStorage.removeItem('sample_data_loaded');
+            alert('Data reset! Please refresh donors page.');
+            window.close();
+        }
+    </script>
+</body>
+</html>
